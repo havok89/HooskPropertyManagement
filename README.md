@@ -11,6 +11,8 @@ For getting started at the moment check the base systems notes
 - [Creating a Page](https://github.com/havok89/Hoosk/wiki/Creating-a-Page)
 - [Integrating with Rightmove ADF](https://github.com/havok89/HooskPropertyManagement/wiki/Rightmove-ADF-Integration)
 - [Adding the property search box to a page](https://github.com/havok89/HooskPropertyManagement/wiki/Property-Search-Box)
+- [Adding a Branch](https://github.com/havok89/HooskPropertyManagement/wiki/Adding-a-branch)
+- [Adding a Property](https://github.com/havok89/HooskPropertyManagement/wiki/Adding-a-Property)
 
 # Notes
 The default theme is in bootstrap and should be simple to customize
