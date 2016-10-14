@@ -19,11 +19,13 @@
 		<?php if ($page['enableJumbotron'] == 1) { ?>
 	    <div class="container content-padding">
 	      <div class="row">
-				<?php echo $page['jumbotronHTML']; ?>
-	        </div>
-	      </div>
-			<?php } ?>
-			<?php if ($page['enableSearch'] == 1) {  getTheSearchBox(); } ?>
+					<div class="col-md-12">
+						<?php echo $page['jumbotronHTML']; ?>
+					</div>
+        </div>
+      </div>
+		<?php } ?>
+		<?php if ($page['enableSearch'] == 1) {  getTheSearchBox(); } ?>
 </div>
 <!-- /JUMBOTRON container-->
 <!-- CONTENT
