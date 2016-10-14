@@ -14,5 +14,10 @@ For getting started at the moment check the base systems notes
 - [Adding a Branch](https://github.com/havok89/HooskPropertyManagement/wiki/Adding-a-branch)
 - [Adding a Property](https://github.com/havok89/HooskPropertyManagement/wiki/Adding-a-Property)
 
+# Requirements
+PHP 5.5 or greater
+1 MySQL database
+must be installed in the web root, it will not function from a sub directory
+
 # Notes
 The default theme is in bootstrap and should be simple to customize
