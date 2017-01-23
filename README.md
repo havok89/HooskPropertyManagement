@@ -21,3 +21,10 @@ For getting started at the moment check the base systems notes
 
 # Notes
 The default theme is in bootstrap and should be simple to customize
+
+
+##
+![BrowserStack](http://hoosk.org/browserstack-logo.png)
+
+Hoosk is cross browser tested using BrowserStack.
+BrowserStack provides instant access to multiple desktop and mobile browsers, check it out! - [https://www.browserstack.com](https://www.browserstack.com)
