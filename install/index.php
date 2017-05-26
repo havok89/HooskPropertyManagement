@@ -11,9 +11,11 @@
     $contents .= "//Database Name \n";
 	$contents .= "define ('DB_NAME', '".$_POST['dbName']."'); \n";
 	$contents .= "//Base URL \n";
-	$contents .= "define ('BASE_URL', 'http://".$_POST['siteURL']."'); \n";
+	$protocol_type = (empty($_POST['siteURL_https']))?'http://':'https://';
+	$contents .= "define ('BASE_URL', '".$protocol_type.$_POST['siteURL']."'); \n";
 	$contents .= "//Email/Cookie URL \n";
 	$contents .= "define ('EMAIL_URL', '".$_POST['siteURL']."'); \n";
+	$contents .= "session_start();";
 	$contents .= "?>";
 
 	$mysql_host = $_POST['dbHost'];
@@ -166,6 +168,15 @@ $conn->close();
 						<input type="text" id="siteName" name="siteName" class="span5">
 					</div> <!-- /controls -->
 				</div> <!-- /control-group -->
+		    
+        		<div class="control-group">
+					<label class="control-label" for="siteURL_https">My Site uses:</label>
+					<div class="controls">
+						<input type="radio" id="siteURL_https" name="siteURL_https" value="0" class="span3" checked="checked">http
+						<input type="radio" id="siteURL_https" name="siteURL_https" value="1" class="span3">https
+					</div> <!-- /controls -->
+				</div> <!-- /control-group -->
+				<hr>
         		<div class="control-group">
 					<label class="control-label" for="siteURL">Site URL (without http:// or trailing slash)</label>
 					<div class="controls">
