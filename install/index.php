@@ -15,6 +15,7 @@
 	$contents .= "define ('BASE_URL', 'http://".$_POST['siteURL']."'); \n";
 	$contents .= "//Email/Cookie URL \n";
 	$contents .= "define ('EMAIL_URL', '".$_POST['siteURL']."'); \n";
+	$contents .= "session_start();";
 	$contents .= "?>";
 
 	$mysql_host = $_POST['dbHost'];
