@@ -12,7 +12,7 @@
 	$contents .= "define ('DB_NAME', '".$_POST['dbName']."'); \n";
 	$contents .= "//Base URL \n";
 	$protocol_type = (empty($_POST['siteURL_https']))?'http://':'https://';
-	$contents .= "define ('BASE_URL', 'http://".$_POST['siteURL']."'); \n";
+	$contents .= "define ('BASE_URL', '".$protocol_type.$_POST['siteURL']."'); \n";
 	$contents .= "//Email/Cookie URL \n";
 	$contents .= "define ('EMAIL_URL', '".$_POST['siteURL']."'); \n";
 	$contents .= "session_start();";
